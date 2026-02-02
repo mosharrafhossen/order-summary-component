@@ -1,0 +1,131 @@
+:root {
+  --blue-100: hsl(225, 100%, 94%);
+  --blue-700: hsl(245, 75%, 52%);
+  --blue-50: hsl(225, 100%, 98%);
+  --gray-600: hsl(224, 23%, 55%);
+  --blue-950: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--blue-100);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 375px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+h1 {
+  color: var(--blue-950);
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--gray-600);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.plan-box {
+  background-color: var(--blue-50);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.plan-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan-left h2 {
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--blue-950);
+}
+
+.plan-left span {
+  font-size: 14px;
+  color: var(--gray-600);
+}
+
+.change-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue-700);
+}
+
+.change-link:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--blue-700);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 15px 20px rgba(56, 41, 224, 0.3);
+  margin-bottom: 1rem;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  background: none;
+  border: none;
+  color: var(--gray-600);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  color: var(--blue-950);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .card {
+    max-width: 420px;
+  }
+}
